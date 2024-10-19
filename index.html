@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Using For Loop</title>
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <p>Table<input type="text" id="table"></p>
+                <p>Start<input type="text" id="start"></p>
+                <p>End<input type="text" id="end"></p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><input type="submit" onclick="sub()"></td>
+        </tr>
+    </table>
+    <script>
+        function sub() {
+            table = document.getElementById('table').value
+            start = document.getElementById('start').value
+            end = document.getElementById('end').value
+            for (i = start; i <= end; i++) {
+                document.write(table + "x" + i + "=" + i * table + "<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>
